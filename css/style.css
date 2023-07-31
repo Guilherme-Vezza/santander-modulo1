@@ -1,0 +1,144 @@
+h1 {
+    font-size: 25px;    
+}
+
+a {
+    color:inherit;    
+}
+
+i {
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+}
+
+.no-style {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+header, footer {
+    border-bottom: 1px solid #8d80805b;
+    box-shadow: 0 0 1.6rem  #8d80805b;
+    background-color: #8d80805b;
+    max-height: 200px;
+    padding: 0px 20px 0px 20px;
+}
+
+#sucesso {
+    background-color: green;
+    color: white;
+}
+
+
+#footer {
+    position: fixed;
+    width: calc(100% - 40px);
+    bottom: 0px;
+    min-height:100px;
+    max-height: 200px;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header section {
+    display:flex;
+    justify-content: space-between;   
+    align-items: center; 
+}
+
+#list-menu {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+}
+
+
+#logo {
+    max-width: 100px;
+    height: auto;
+}
+
+#menu-user-options {
+    border: 1px solid #8d80805b;
+    padding: 10px;
+}
+
+#table-user {
+    border: 1px solid #8d80805b;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#table-user-edit {
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#add-button {
+    position:absolute;
+    right: 0px;
+    margin-right: 10px;
+    max-height:80%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.items-center {
+    text-align: center;
+}
+
+tr > td:last-child {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tr > td:last-child div {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    table td:nth-child(4),
+    table th:nth-child(4) {
+      display: none;
+    }
+  }
+  
+.modal-body, .modal-footer {
+    justify-content: center;
+}
+
+.col-3, form {
+    text-align: center;
+}
+
+form fieldset {
+    margin-bottom:20px;
+}
+
+.no-border tr, .no-border td  {
+    border-style: hidden;
+}
+
+.align-end {
+    text-align: end;
+}
