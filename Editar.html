@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Editar</title>
+</head>
+<body>
+    <header>
+        <section id="header-section" class="row">
+            <article class="col">
+                <img src="images/sea-turtle.png" id="logo" alt="Logo">
+            </article>
+            <article class="col-2">
+                <form action="" method="GET">
+                    <fieldset class="input-group mb-3">
+                        <input type="text" id="search" class="form-control" placeholder="Search">  
+                        <label class="input-group-text" for="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>            
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </header>
+    <section id="page-content" class="container">
+        <nav id="menu-user-options" class="mt-20">
+            <ul class="row">
+                <li class="col-3">Menu 1</li>
+                <li class="col-3">Menu 2</li>
+                <li class="col-3">Menu 3</li>
+                <li class="col-3">Menu 4</li>
+            </ul>
+        </nav>
+        <section id="table-user-edit" class="mt-20">
+            <h1>Inserir/Alterar Cliente</h1>
+        </section>
+        <section>
+            <form id="user-form" class="mt-20" method="POST">
+                <table class="table no-border">
+                    <tr>
+                        <td><label for="name">Nome:</label></td>                    
+                        <td><input id="name" class="form-control" name="name" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date">Data Nascimento:</label></td>
+                        <td><input id="date" class="form-control" name="date" type="date"></td>
+                    <tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input id="email" class="form-control" name="email" type="text" placeholder="john@jgraph.com"></td>                    
+                    </tr>
+                    <tr>
+                        <td><label for="name">Sexo:</label></td>
+                        <td>
+                            <select name="gender" id="gender" class="form-control">
+                                <option value="">----------</option>
+                                <option value="f">Feminino</option>
+                                <option value="m">Masculino</option>
+                                <option value="n">Prefiro não informar</option>
+                            </select>
+                        </td>                        
+                    </tr>
+                </table>
+                <div class="align-end">
+                    <button type="button" class="btn btn-danger">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#deleteModal">Salvar</button>            
+                </div>                
+            </form>
+        </section>
+    </section>
+    <section class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <article class="modal-dialog">
+            <section class="modal-content">
+                <article class="modal-header" id="sucesso">
+                    <h5 class="modal-title" id="deleteModalLabel">Sucesso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </article>
+                <article class="modal-body">
+                    Cliente salvo com sucesso.
+                </article>
+            </section>
+        </article>
+    </section>
+    <footer id="footer">
+        <p id="student">Guilherme Morelli Vezzá - Módulo 1</p>
+    </footer>
+</body>
